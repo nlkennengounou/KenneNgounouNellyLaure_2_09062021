@@ -7,22 +7,16 @@
 	box-sizing: border-box;
 }
 
-.main, header {
-	max-width: 1900px;
-	margin: auto;
-}
 
-.navigation {
-	max-width: 1900px;
-	margin: autoss;
-}
-  
+ 
 
 Body
 {
 	background: white;
 	flex-wrap: nowrap;
 	flex-direction: column;
+	max-width: 1900px;
+	margin: auto;
 }
 
 /* CSS de mon header:  **********************************************************************************************************************/
@@ -595,7 +589,8 @@ footer a
 		margin-bottom:50px;
 		
 	}
-	
+
+
 	.les_filtres 
 	{
 		display: flex;
@@ -606,6 +601,11 @@ footer a
 	.img-heberg-pop
 	{
 		width: 200px;
+	}
+
+	.etoiles-pop
+	{
+		margin-top: 20px;
 	}
 }
 
@@ -709,7 +709,6 @@ footer a
 		margin: 0px;
 		margin-bottom: 20px;
 	}
-
 
 	.un_filtre{
 		margin-bottom: 10px;
