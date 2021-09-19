@@ -7,6 +7,17 @@
 	box-sizing: border-box;
 }
 
+.main, header {
+	max-width: 1900px;
+	margin: auto;
+}
+
+.navigation {
+	max-width: 1900px;
+	margin: autoss;
+}
+  
+
 Body
 {
 	background: white;
