@@ -13,6 +13,7 @@ Body
 	flex-wrap: nowrap;
 	flex-direction: column;
 	max-width: 1400px;
+	min-width: 300px;
 	margin: auto;
 }
 
@@ -261,13 +262,13 @@ main
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width:100%;
 }
 
 .un_hebergement
 {
-    width: 250px;
+	width: 250px;
 	box-shadow: 0 0 2em #F2F2F2;
 }
 
@@ -312,6 +313,7 @@ main
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	width: 100%;
 	align-items: center;
 }
 
@@ -596,19 +598,27 @@ footer a
 
 	}
 
+	.populaires
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
 	.section_hebergement 
 	{
 		width: 100%;
 		margin-bottom:50px;	
 	}
 
-
-	.hebergements_pop, .hebergements
+	.hebergements_pop
 	{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	.article
@@ -618,7 +628,37 @@ footer a
 
 	.un_hebergement_pop
 	{
-		max-width: fit-content;
+		width: 250px;
+	}
+
+	.article_pop
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 100%;
+		height: 350px;
+	}
+
+	.img-heberg-pop
+	{
+		width: 100%;
+		height: 200px;
+		padding-right: 0px;
+	}
+
+	.entete_populaire
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		align-items: center;
+	}
+
+	.propriete-pop
+	{
+		max-width: 100%;
 	}
 
 	.les_filtres 
@@ -630,13 +670,16 @@ footer a
 
 	.img-heberg-pop
 	{
-		width: 200px;
+		max-width: 100%;
+		height: 200px;
+		border-radius: 20px 20px 0px 0px;
 	}
 
 	.etoiles-pop
 	{
-		margin-top: 20px;
+		margin-top: 0px;
 	}
+
 }
 
 /* autres reglages*/
@@ -678,69 +721,18 @@ footer a
 		margin-right: 20px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-	}/*
-
-	.les_activites
-	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		height: fit-content;
-		width:500px;
 	}
 
-	.activ_column, .activ_column_double 
+	.un_hebergement_pop, .un_hebergement
 	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		height: fit-content;
-		width:500px;
+		width: 45%;
 	}
-
-	.article-activ-double, .double
-	{
-		background-color: none;
-	}
-
-	.article-activ,  .petite
-	{
-		width:500px;
-		margin-top: 30px;
-	}
-
 	
-
-	.activ_column
-	{
-		height: 100%;
-		width: 20% ;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		flex-wrap: nowrap;
-		border-radius: 0px 0px 20px 20px;
-		background-color: white;
-	}
-
-	.activ_column_double
-	{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		border-radius: 0px 0px 20px 20px;
-	}*/
-
-
-
 }
 
 
 /*pour les téléphones IPHONE8  375 x 812*/
-@media screen and (max-width: 450px)
+@media screen and (max-width: 600px)
 { 
 	.main 
 	{
@@ -848,7 +840,7 @@ footer a
 		border: 2px solid #0065FC;
 	}
 
-	.section_activites, .section_hebergements, .main
+	.section_activites, .section_hebergements, .main, .populaires,header
 	{
 		margin-left: 0px;
 		margin-right: 0px;
@@ -885,6 +877,7 @@ footer a
 		width: 100%;
 		max-height: 100%;
 		height: auto;
+		margin:0px;
 		padding-bottom: 0px;
 	}
 
@@ -900,6 +893,10 @@ footer a
 		margin-bottom: 30px;
 		border-radius: 20px;
 		box-shadow: 0 0 2em #F2F2F2;
+	}
+	.un_hebergement_pop
+	{
+		width: 100%;
 	}
 	
 	.etoiles-pop
@@ -927,7 +924,7 @@ footer a
 
 	.img-heberg-pop
 	{
-		width: 100px;
+		width: 100%;
 	}
 
 
@@ -963,7 +960,7 @@ footer a
 	.propriete-pop
 	{
 		height: 100%;
-		width: 180px;
+		width: 100%;
 	}
 
 	footer	
