@@ -21,11 +21,11 @@ Body
 header
 {
 	height: 100px;
-	max-width: 1400px;
+	width: 100%;
 }
 .main
 {
-	max-width: 1400px;
+	width: 100%;
 }
 
 .navigation
@@ -102,8 +102,8 @@ main
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-	height: 40px;
-	width: 25%;
+	height: 50px;
+	max-width: 450px;
 	margin-bottom: 20px;
 }
 
@@ -427,7 +427,7 @@ strong
 	display: flex;
     flex-direction: column;
 	justify-content:flex-start;
-	border-radius: 0px 0px 20px 20px;
+	border-radius: 20px;
 	box-shadow: 0 0 1em #F2F2F2;
 } 
 
@@ -585,6 +585,14 @@ footer a
 		margin: 0px;
 	}
 
+	.nav1
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 45%;
+	}
+
 	.btn_map 
 	{
 		width: 50px;
@@ -694,6 +702,14 @@ footer a
 		margin-top: 0px;
 	}
 
+	.nav1
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 30%;
+	}
+
 	.btn_map 
 	{
 		width: 50px;
@@ -793,9 +809,15 @@ footer a
 	.nav_menu_mobile
 	{
 		height: 50px;
+		width: 100%;
 		border-top:unset;
 		border-bottom: 2px solid black;
 		font-weight: bold;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
 	}
 
 	.nav_menu_mobile:hover
@@ -841,6 +863,11 @@ footer a
 	.btn_map 
 	{
 		width: 50px;
+	}
+
+	.input_search
+	{
+		width: 150px;
 	}
 
 	.btn_rechercher
