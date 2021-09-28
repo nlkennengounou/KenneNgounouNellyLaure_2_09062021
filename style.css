@@ -764,7 +764,6 @@ footer a
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		align-items: space-around;
 		height: fit-content;
 		/*min-width: 600px;*/
 	}
@@ -1017,7 +1016,6 @@ footer a
 		max-width: 500px;
 		align-items: flex-start;
 		border-radius: 20px;
-		padding-bottom: -20px;
 		width: 100%;
 	}
 
